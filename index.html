@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+
+<style>
+    /* img{
+    width: 100%;       
+    max-width: 400px;  
+    height: auto; 
+    border-radius: 360px;     
+} */
+
+        
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.6;
+        background-color: black;
+        color: white; 
+    }
+
+    nav{
+        background: #222;
+        padding: 20px 50px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    nav h2{
+        color: white;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        nav a{
+            color:white;
+            text-decoration: none;
+        }
+    }
+
+    nav a{
+        color:white;
+        text-decoration: none;
+    }
+
+    nav a:hover{
+        color:gold;
+    }
+        /* Hero Section */
+    .hero{
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:  rgb(103, 217, 252);
+        color: black; 
+        padding: 40px;
+    }
+
+    .hero h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+        .hero p{
+            font-size: 20px;
+        }
+       
+    .btn{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: #222;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn:hover{
+        transform: scale(1.1);
+    }
+
+        /* Sections */
+       section {
+        padding: 50px 10%; 
+    }
+
+    section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: white; 
+    }
+
+        /* Skills */
+        .skills-container { 
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+   .skill-card { 
+        background: white;
+        color: black; 
+        padding: 25px;
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(255,255,255,0.1);
+   }
+        
+        /* Projects */
+        .projects {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 20px;
+    }
+
+    .project {
+        background: white;
+        color: black; 
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        }
+
+    .project:hover {
+        transform: translateY(-10px); 
+    }
+    
+    .project img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+        button{
+        padding: 12px 25px;
+        background: #222;
+        color: #ccc;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background: #555;
+        color: white;
+    }
+
+    footer{
+        background: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Contact */
+    /*#contact{
+        background: #777272;
+        padding: 60px 10%;
+    }
+
+    #contact h2{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    #contact form{
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px #ccc;
+    }
+
+    #contact label{
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+        
+    #contact input,
+    #contact textarea{
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    #contact textarea{
+        resize: vertical;
+    }
+
+    #contact button{
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        background: #222;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #contact button:hover{
+        background: #555;
+    }*/
+
+
+    /* Mobile */
+        @media (max-width: 700px) {
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 35px;
+        }
+        
+        .projects { 
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+    
+<body>
+<!--Navigation-->
+<nav>
+    <h2>My Portfolio.</h2>
+
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!--<li><a href="#contact">Contact</a></li>-->
+    </ul>
+</nav>
+
+<!--Home-->
+<section class="hero" id="home">
+    <div>
+        <!--<img src="images/ChatGPT Image Aug 21, 2026, 11_58_54 AM.png" alt="jpg">-->
+        <h1>Hello, I'm Zelda! 🤗</h1>
+        <p>I'm a year 8 student learning how to code and build amazing websites!</p> 
+
+        <a href="#projects" class="btn"> 
+            View my projects!
+        </a> 
+    </div>
+</section>
+<!--About-->
+<section id="about">
+<h2>About me</h2>
+<p>
+    I'm a young programmer who enjoys technology, games and creating websites. I'm currently learning HTML,
+    CSS, Scratch and Python.
+</p>
+</section>
+
+<!--Skills-->
+<section id="skills">
+
+    <h2>My skills</h2>
+
+    <div class="skills">
+
+        <div class="skills">
+             <h3>HTML</h3>
+             <P>Building Websites</P>
+        </div>
+
+        <div class="skill">
+            <h3>CSS</h3>
+            <P>Styling websites</P>
+        </div>
+
+        <div class="skill">
+            <h3>Scratch</h3>
+            <p>Creating games</p>
+        </div>
+
+        <div class="skill">
+             <h3>Python</h3>
+             <p>Programming</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--Projects-->
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+     <div class="projects">
+        <!--Maze Game-->
+        <div class="project">
+            <h3> Scratch Maze</h3>
+            <p>
+                A Scratch maze games where the player must avoid enemies and reach the goal.
+            </p>
+        </div>
+
+          <div class="project">
+            <!--Pyhthon Quiz-->
+
+            <h3>Python Quiz</h3>
+            <p>
+                A Python quiz game that asks questions and keeps track of the players score. 
+            </p>
+
+          </div>
+          
+     </div>
+
+</section>
+
+<!--Contact-->
+<section id="contact">
+    <!--<h2>Contact me 📞</h2>
+
+    <form>
+        <label>Name</label>
+        <input 
+        type="text"
+        placeholder="Enter your name"
+        required
+        >
+
+        <label>Email</label>
+        <input 
+        type="email"
+        placeholder="Enter your email"
+        required
+        >
+
+        <label>Messages</label>
+        <textarea
+               rows="5"
+               placeholder="Write your message" 
+        ></textarea>
+        
+        <button type="submit">
+            Send message
+        </button>
+
+    </form>-->
+
+</section>
+
+    <!--Footer-->
+    <footer>
+        <p>
+            &copy;2026 Zelda|My Coding Platform
+        </p>
+    </footer>
+    
+</body>
+</html>
+
